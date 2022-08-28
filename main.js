@@ -10,25 +10,9 @@
 
 
 function digitalRoot(n) {
-    let finalNum = 0;
+    return n > 0 ? 1 + ((parseInt(n) - 1) % 9) : 0
 
-
-    let devideNum = 1
-    let numberLef 
-    let numLength = ((Math.log(Math.abs(n) + 1) * 0.43429448190325176 | 0) + 1)
-    for (i = 0; i < numLength - 1; i++) {
-        devideNum += '0'
-    }
-
-    finalNum += Math.floor(n / devideNum)
-    
-    numberLef = n % devideNum
-    if (numberLef < 9 ) {
-        digitalRoot (numberLef )
-    }
-
-    console.log(finalNum)
 
 }
 
-digitalRoot(123)
+console.log( digitalRoot(24242323563))
