@@ -29,5 +29,21 @@
  * @return {boolean}
  */
 var isPalindrome = function (s) {
+    let result = true
+    const word = s.replace(/[^0-9a-zA-Z]+/gim, '')
+    console.log(word)
+    for (i = 0; i < word.toLowerCase().length; i++) {
+        if (word[i] !== word[word.length - i]) {
+            result = false
+            return result
+        }
+    }
+
+
+    return result
 
 };
+console.log(
+
+    isPalindrome("0 9 : ,")
+)
