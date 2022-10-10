@@ -47,3 +47,20 @@ console.log(
 
     isPalindrome("0 9 : ,")
 )
+
+function Box(value) {
+    this.value = value;
+}
+
+// Properties all boxes created from the Box() constructor
+// will have
+Box.prototype.getValue = function () {
+    return 9;
+};
+
+const boxes = [
+    new Box(1),
+    new Box(2),
+    new Box(3),
+];
+console.log(boxes[1].getValue())
