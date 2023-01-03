@@ -50,7 +50,7 @@ const alphabet = [
 ];
 const generateNumber = (letter) => {
     let number
-    for (let i = 0; i < alphabet.length ; i++) {
+    for (let i = 0; i < alphabet.length; i++) {
         if (letter.toLowerCase() === alphabet[i].toLowerCase()) {
             number = i + 1
         }
@@ -72,8 +72,8 @@ function alphabetPosition(text) {
             texts.push(generateNumber(text[i]))
         }
     }
-    for ( let i = 0 ; i <texts.length ; i ++)  { 
-        value += `${texts[i]}${i=== texts.length -1?'':' '}`
+    for (let i = 0; i < texts.length; i++) {
+        value += `${texts[i]}${i === texts.length - 1 ? '' : ' '}`
     }
     console.log(value)
     return value

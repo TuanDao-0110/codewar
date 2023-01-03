@@ -1,0 +1,23 @@
+{
+  "name": "codewar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+        "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuanDao-0110/codewar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TuanDao-0110/codewar/issues"
+  },
+  "homepage": "https://github.com/TuanDao-0110/codewar#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
